@@ -1,0 +1,61 @@
+@import "root";
+
+.card {
+    background: var(--firstBack);
+    border: var(--border);
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    opacity: 1;
+    user-select: none;
+
+    &:hover {
+        opacity: 0.95;
+    }
+}
+  
+.cardPhoto img {
+    width: 100%;
+    display: block;
+}
+    
+.cardContent {
+    text-align: center;
+    padding: 5% 0;
+    line-height: 220%;
+}
+    
+.cardTitle {
+    font-size: 1.5rem;
+    color: var(--firstColor);
+    display: inline-block;
+}
+    
+.cardSubtitle {
+    font-size: 1.1rem;
+    color: var(--secColor);
+}
+    
+.cardNum {
+    font-size: 1rem;
+    color: var(--secColor);
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px){
+    .cardTitle{
+        font-size: 1.3rem;
+    }
+    
+    .cardSubtitle{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 480px){
+    .cardTitle{
+        font-size: 1.3rem;
+    }
+    
+    .cardSubtitle{
+        font-size: 0.9rem;
+    }
+}

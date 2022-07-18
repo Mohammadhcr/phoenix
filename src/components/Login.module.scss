@@ -1,0 +1,180 @@
+@import "root";
+
+.lForm{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    background: var(--bodyBack);
+}
+
+.title h1{
+    text-align: center;
+    cursor: default;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--secBack);
+}
+
+.login{
+    background: var(--firstBack);
+    width: 430px;
+    height: auto;
+    padding: 3rem;
+    border: 2px solid var(--borderColor);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        margin: 1.1rem 0;
+        position: relative;
+
+        input{
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: 300;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid var(--secBorderColor);
+            border-radius: 0;
+            color: var(--firstColor);
+            background: var(--firstBack);
+
+            &::placeholder{
+                font-size: 1rem;
+                opacity: 0.7;
+                font-weight: 300;
+                color: var(--secColor);
+            }
+
+            &:focus{
+                border-bottom: 2px solid var(--secBack);
+
+                ~ .placeholder{
+                    left: 0;
+                    top: -15px;
+                    opacity: 1;
+                    font-size: 1.1rem;
+                }
+
+                &::placeholder{
+                    opacity: 0;
+                }
+            }
+        }
+
+        .placeholder{
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--secColor);
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+.submit button{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: var(--secBack);
+    border: none;
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: all 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover{
+        background: var(--hoverSecBack);
+    }
+}
+
+.options{
+    border-top: 1px solid var(--secBorderColor);
+    text-align: center;
+    padding-top: 25px;
+    margin: 2rem 1rem 1.5rem;
+    color: var(--secColor);
+    font-size: 0.9rem;
+    font-weight: 300;
+    
+    a{
+        color: var(--secBack);
+    }
+}
+
+.socialLoginButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialLoginButton{
+    width: 60%;
+    font-weight: 400;
+    margin: 6px auto;
+    padding: 6px 0;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bxl{
+    font-size: 1.1rem;
+    padding-right: 0.2rem;
+}
+
+.bxlCreate{
+    font-size: 1.5rem;
+    padding-right: 0.3rem;
+}
+
+.bxlLog{
+    font-size: 1.2rem;
+    padding-right: 0.3rem;
+}
+
+.google{
+    background: #fafafa;
+    color:rgba(0, 0, 0, 0.65);
+}
+
+.apple{
+    background: #000;
+    color: #fff;
+}
+
+.facebook{
+    background: #1877f2;
+    color: #fff;
+}
+
+@media screen and (min-width: 120px) and (max-width: 480px){
+    
+    .login{
+        width: 100%;
+        padding: 2rem;
+        border: none;
+    }
+    
+    .socialLoginButton{
+        width: 70%;
+    }
+}

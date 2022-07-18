@@ -1,0 +1,54 @@
+header{
+    padding: 20px 2rem;
+}
+
+.hamburger-menu{
+    display: block;
+}
+
+.menu-list{
+    display: flex;
+}
+
+nav{
+    display: none;
+}
+
+.logo-title{
+    margin-left: 2rem;
+}
+
+.logo-title a h1{
+    font-size: 1.5rem;
+}
+
+.section-title{
+    padding-top: 4rem;
+}
+
+.section-title h2{
+    font-size: 2.5rem;
+}
+
+.cards{
+    width: calc(100% - 4rem);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 2rem auto;
+}
+
+.card-title{
+    font-size: 1.3rem;
+}
+
+.card-subtitle{
+    font-size: 0.9rem;
+}
+
+.footer-items{
+    padding: 1rem 2rem;
+}
+
+.rss input{
+    width: 100%;
+}

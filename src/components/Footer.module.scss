@@ -1,0 +1,23 @@
+@import "root";
+
+footer{
+    width: 100%;
+    color: #fff;
+    user-select: none;
+    background: var(--secBack);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.mohammadhcr{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.copyright{
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px){
+
+}

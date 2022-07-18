@@ -1,0 +1,38 @@
+header{
+    padding: 20px 3rem;
+}
+
+.hamburger-menu{
+    display: block;
+}
+
+.menu-list{
+    display: flex;
+}
+
+nav{
+    display: none;
+}
+
+.logo-title{
+    margin-left: 30px;
+}
+
+.logo-title a h1{
+    font-size: 1.8rem;
+}
+
+.section-title{
+    padding-top: 6rem;
+}
+
+.cards{
+    width: calc(100% - 6rem);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 3rem auto;
+}
+
+.footer-items{
+    padding: 2rem 3rem;
+}
