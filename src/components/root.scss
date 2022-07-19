@@ -21,14 +21,14 @@
 }
 
 .lightMode{
-    --bodyBack: #fafafa;
+    --bodyBack: #f5f5f5;
     --firstBack: #fff;
     --secBack: #369;
     --hoverSecBack: #336699dd;
     --firstColor: #000;
     --secColor: #666;
-    --borderColor: #eaeaea;
-    --hoverBorderColor: #eaeaeaaa;
+    --borderColor: #e5e5e5;
+    --hoverBorderColor: #e5e5e5aa;
     --secBorderColor: #bababa;
     --border: 1px solid var(--borderColor);
     background: var(--bodyBack);
@@ -36,13 +36,13 @@
 
 .darkMode{
   --bodyBack: #000;
-  --firstBack: #050505;
+  --firstBack: #0a0a0a;
   --secBack: #369;
   --hoverSecBack: #336699dd;
   --firstColor: #fff;
   --secColor: #999;
-  --borderColor: #151515;
-  --hoverBorderColor: #151515aa;
+  --borderColor: #1a1a1a;
+  --hoverBorderColor: #1a1a1aaa;
   --secBorderColor: #353535;
   --border: 1px solid var(--borderColor);
   background: var(--bodyBack);

@@ -4,7 +4,7 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    padding-top: 80px;
+    padding-top: 70px;
     justify-content: center;
     align-items: center;
     background: var(--bodyBack);
@@ -169,6 +169,11 @@
 }
 
 @media screen and (min-width: 120px) and (max-width: 480px){
+
+    .sForm{
+        background: var(--firstBack);
+    }
+
     .title h1{
         font-size: 2rem;
     }
