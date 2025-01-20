@@ -1,0 +1,63 @@
+@import "root";
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logoAndName{
+        padding: 2rem;
+
+        h1{
+            color: var(--firstColor);
+            font-size: 2.5rem;
+        }
+
+        h3{
+            color: var(--secColor);
+            font-size: 1.5rem;
+        }
+    }
+
+    .button{
+        padding: 3rem;
+        border-left: var(--border);
+
+        a{
+            color: var(--firstColor);
+            padding: 0.9rem 2rem;
+            border-radius: 0.7rem;
+            font-size: 1.2rem;
+            background: var(--firstBack);
+        }
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 480px){
+    .main{
+        flex-direction: column;
+
+        .logoAndName{
+            text-align: center;
+
+            h1{
+                font-size: 2.2rem;
+            }
+
+            h3{
+                font-size: 1.3rem;
+            }
+        }
+        
+        .button{
+            border-left: none;
+            border-top: var(--border);
+
+            a{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    
+}

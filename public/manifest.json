@@ -1,0 +1,62 @@
+{
+  "name": "The Phoenix Store",
+  "short_name": "Phoenix",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "./icons/icon32.png",
+      "size": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon48.png",
+      "size": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon72.png",
+      "size": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon96.png",
+      "size": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon128.png",
+      "size": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon144.png",
+      "size": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon152.png",
+      "size": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon192.png",
+      "size": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon384.png",
+      "size": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon512.png",
+      "size": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

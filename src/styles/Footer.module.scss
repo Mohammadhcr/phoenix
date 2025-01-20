@@ -1,0 +1,24 @@
+@import "root";
+
+footer{
+    width: 100%;
+    color: var(--firstColor);
+    user-select: none;
+    background: var(--firstBack);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.mohammadhcr{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--firstColor);
+
+    span{
+        color: var(--secColor);
+    }
+}
+
+.copyright{
+    font-size: 0.9rem;
+}

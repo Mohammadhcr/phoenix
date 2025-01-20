@@ -1,0 +1,111 @@
+@import "root";
+
+.checkoutNotif{
+    min-height: 100vh;
+    padding: 5rem 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .successfulNotif, .unSuccessfulNotif{
+        border-radius: 1rem;
+        background: var(--firstBack);
+        text-align: center;
+        
+        h2{
+            font-size: 2.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 3rem 3rem 6rem;
+
+            i{
+                font-size: 10rem;
+            }
+        }
+
+        a{
+            color: #026cd9;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin: 0 auto 2rem;
+        }
+    }
+
+    .successfulNotif{
+
+        h2{
+            color: #2dcc70;
+        }
+    }
+
+    .unSuccessfulNotif{
+        
+        h2{
+            color: #e92c2c;
+        }
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 480px){
+    .checkoutNotif{
+        padding: 2rem 1rem;
+
+        .successfulNotif{
+            
+            h2{
+                font-size: 1.7rem;
+                padding: 1rem 1rem 3rem;
+
+                i{
+                    font-size: 7rem;
+                }
+            }
+        }
+
+        .unSuccessfulNotif{
+            
+            h2{
+                font-size: 1.8rem;
+                padding: 1rem 3rem 3rem;
+
+                i{
+                    font-size: 7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px){
+    .checkoutNotif{
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 780px){
+    .checkoutNotif{
+        padding: 4rem 3rem;
+    }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1024px){
+    .checkoutNotif{
+        padding: 4rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    .checkoutNotif{
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px){
+    .checkoutNotif{
+        padding: 4rem 10rem;
+    }
+}

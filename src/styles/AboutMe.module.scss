@@ -1,0 +1,236 @@
+@import "root";
+
+.myMain{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10rem 0;
+
+    .myName{
+        padding-bottom: 5rem;
+        border-bottom: var(--border);
+        text-align: center;
+
+        h1{
+            color: var(--firstColor);
+            font-size: 6rem;
+        }
+
+        h3{
+            color: var(--secColor);
+            font-size: 3rem;
+        }
+    }
+
+    .mySkillsContact{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .myLinks{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+
+        h2{
+            color: var(--firstColor);
+            font-size: 2rem;
+            padding: 5rem 0 2rem;
+        }
+
+        .myLinksLink{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 0 2rem;
+
+            a{
+                padding: 0.8rem 0;
+                font-size: 1.1rem;
+                color: #026cd9;
+                background: var(--firstBack);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.7rem;
+
+                i{
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px){
+    .myMain{
+        padding: 80px 8rem 0;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    .myMain{
+        padding: 80px 6rem 0;
+
+        .myLinks{
+            width: 80%;
+
+            .myLinksLink{
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1024px){
+    .myMain{
+        padding: 80px 4rem 0;
+    
+        .myName{
+            padding-bottom: 4rem;
+    
+            h1{
+                font-size: 5rem;
+            }
+    
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+    
+        .myLinks{
+            width: 90%;
+    
+            h2{
+                padding: 4rem 0 2rem;
+            }
+        }
+
+        .myLinks{
+
+            .myLinksLink{
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 780px){
+    .myMain{
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 3rem 0;
+
+        .myName{
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+
+            h1{
+                font-size: 4rem;
+            }
+
+            h3{
+                font-size: 2rem;
+            }
+        }
+
+        .mySkillsContact{
+            flex-direction: column-reverse;
+        }
+
+        .myLinks{
+            width: 100%;
+
+            h2{
+                padding: 3rem 0 2rem;
+            }
+
+            .myLinksLink{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px){
+    .myMain{
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 2rem;
+
+        .myName{
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+
+            h1{
+                font-size: 3.5rem;
+            }
+
+            h3{
+                font-size: 1.8rem;
+            }
+        }
+
+        .mySkillsContact{
+            flex-direction: column-reverse;
+        }
+
+        .myLinks{
+            border-left: none;
+            width: 100%;
+
+            h2{
+                padding: 3rem 0 2rem;
+            }
+
+            .myLinksLink{
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 480px){
+    .myMain{
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 1.5rem;
+
+        .myName{
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+
+        .mySkillsContact{
+            flex-direction: column-reverse;
+        }
+
+        .myLinks{
+            border-left: none;
+            width: 100%;
+
+            h2{
+                padding: 3rem 0 2rem;
+                font-size: 1.8rem;
+            }
+
+            .myLinksLink{
+                grid-template-columns: repeat(1, 1fr);
+                padding: 0;
+            }
+        }
+    }
+}

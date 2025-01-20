@@ -1,0 +1,108 @@
+@import "root";
+
+.item {
+    background: var(--firstBack);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .info{
+        display: flex;
+        align-items: center;
+  
+        .itemPhoto{
+            width: 120px;
+            margin: 0 2rem;
+            
+            img {
+            width: 100%;
+            display: block;
+            border-radius: 0.7rem;
+            }
+        }
+            
+        .itemContent {
+            line-height: 220%;
+        
+            .itemTitle {
+                font-size: 1.5rem;
+                color: var(--firstColor);
+                display: inline-block;
+            }
+                
+            .itemSubtitle {
+                font-size: 1.1rem;
+                color: var(--secColor);
+            }
+        }
+    }
+
+    .itemPrice{
+        display: flex;
+        align-items: center;
+
+        .price{
+            color: var(--firstColor);
+            font-size: 1.5rem;
+        }
+
+        .dltBtn{
+            background: #d43530;
+            cursor: pointer;
+            padding: 0.3rem 0.3rem 0.2rem;
+            margin: 0 2rem;
+            border-radius: 50%;
+
+            .x{
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 480px){
+    .item {
+        margin: 1rem 0;
+    
+        .info{
+            width: 65%;
+      
+            .itemPhoto{
+                width: 90px;
+                margin: 0 1rem;
+            }
+                
+            .itemContent {
+                line-height: 200%;
+            
+                .itemTitle {
+                    font-size: 1.4rem;
+                }
+                    
+                .itemSubtitle {
+                    font-size: 1rem;
+                }
+                    
+                .itemNum {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    
+        .itemPrice{
+    
+            .price{
+                font-size: 1.2rem;
+            }
+    
+            .dltBtn{
+                margin: 0 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+@import "root";
+
+.lForm{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+    background: var(--bodyBack);
+}
+
+.title h1{
+    text-align: center;
+    cursor: default;
+    font-size: 2.2rem;
+    color: var(--secBack);
+    user-select: none;
+}
+
+.login{
+    background: var(--firstBack);
+    width: 430px;
+    height: auto;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 0;
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+
+        .placeholder{
+            font-size: 1rem;
+            color: var(--firstColor);
+            padding-bottom: 0.5rem;
+            user-select: none;
+        }
+
+        div{
+            border: 2px solid var(--secBorderColor);
+            border-radius: 0.7rem;
+            padding: 0.5rem;
+            display: flex;
+            font-size: 1.2rem;
+            align-items: center;
+            color: var(--firstColor);
+
+            input{
+                width: 100%;
+                font-size: 1.1rem;
+                font-weight: 300;
+                outline: none;
+                border: none;
+                margin-left: 0.5rem;
+                background: var(--firstBack);
+                color: var(--firstColor);
+            }
+        }
+    }
+}
+
+.submit button{
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    background: var(--secBack);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    
+    &:hover{
+        background: var(--hoverSecBack);
+    }
+}
+
+.options{
+    border-top: 1px solid var(--secBorderColor);
+    text-align: center;
+    padding-top: 1.5rem;
+    margin: 1.8rem 1rem;
+    color: var(--secColor);
+    font-size: 0.9rem;
+    font-weight: 300;
+    
+    a{
+        color: var(--secBack);
+    }
+}
+
+.socialLoginButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialLoginButton{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 0.7rem;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.bxl{
+    font-size: 1.1rem;
+    padding-right: 0.2rem;
+}
+
+.bxlCreate{
+    font-size: 1.5rem;
+    padding-right: 0.3rem;
+}
+
+.bxlLog{
+    font-size: 1.2rem;
+    padding-right: 0.3rem;
+}
+
+.google{
+    background: #fafafa;
+    color:rgba(0, 0, 0, 0.65);
+}
+
+.apple{
+    background: #000;
+    color: #fff;
+}
+
+.facebook{
+    background: #1877f2;
+    color: #fff;
+}
+
+@media screen and (min-width: 120px) and (max-width: 480px){
+    
+    .lForm{
+        background: var(--firstBack);
+    }
+
+    .title h1{
+        font-size: 2rem;
+    }
+
+    .login{
+        width: 100%;
+        padding: 1.5rem;
+        border: none;
+    }
+    
+    .socialLoginButton{
+        width: 70%;
+    }
+}
